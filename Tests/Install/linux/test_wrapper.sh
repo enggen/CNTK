@@ -25,6 +25,8 @@ else
   DROP_FILE="$(basename "$DROP_LOCATION")"
 fi
 
+echo 'check_certificate = off' > ~/.wgetrc
+
 tar -xzf "$DROP_FILE"
 test -d cntk
 
